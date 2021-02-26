@@ -1,5 +1,5 @@
-ls -l | egrep -v "^d" | wc -l > temp #creates temp with the number of files in the current directory
-read file2 < temp #saves the number of files and directories in a variable (counts temp and first line)
+ls -l | egrep -v "^d" | wc -l > temp #creates temp with the number of files in the current directory 
+read file2 < temp #saves the number of files and directories in a variable (counts temp and first line )
 rm temp
 let files=$file2-2
 echo "Type the number of files you guess this directory has:"
